@@ -45,6 +45,11 @@ $faq=[
   <title>PHP-google-faq</title>
 </head>
 <body>
-  <h1>Google faq</h1>
+  <main>
+    <?php foreach($faq as $item){ ?>
+    <h2> <?php echo $item['question'] ?> </h2>
+    <p> <?php echo $item['answer'] ?> </p>
+    <?php } ?>
+  </main>
 </body>
 </html>
